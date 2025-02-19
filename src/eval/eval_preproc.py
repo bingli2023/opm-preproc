@@ -139,13 +139,13 @@ def eval_oddball(cfg, raw, epoch_in=None):
     
     joint_kwargs = dict(ts_args=dict(time_unit="s"), topomap_args=dict(time_unit="s"))
 
-    for axis in cfg['eval_preproc']['plot_axes']:
-        evoked_time_gen.plot_joint(
-            times="peaks", 
-            title=f"decode pattern - {classes_title}", 
-            picks=pick_axis(evoked_time_gen, axis, cfg['info']['sensor_wildcard']),
-            **joint_kwargs,
-            )
+    # for axis in cfg['eval_preproc']['plot_axes']:
+    #     evoked_time_gen.plot_joint(
+    #         times="peaks", 
+    #         title=f"decode pattern - {classes_title}", 
+    #         picks=pick_axis(evoked_time_gen, axis, cfg['info']['sensor_wildcard']),
+    #         **joint_kwargs,
+    #         )
 
 
 
